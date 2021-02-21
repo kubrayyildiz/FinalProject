@@ -55,7 +55,7 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Product product)
         {
-            //Gönderdiğin ürün Id isne sahip olan listedeki rürünü bul 
+            //Gönderdiğin ürün Id sine sahip olan listedeki ürünü bul 
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.CategoryId = product.CategoryId;
